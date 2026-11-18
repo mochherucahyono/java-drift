@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Java Drift - 3D Web Game</title>
+  <script type="module" crossorigin src="/java-drift/assets/index-D0tOPhQZ.js"></script>
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/rolldown-runtime-DK3Fl9T5.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/observable.pure-H-M_hi7F.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/performanceConfigurator-UtxC_Odd.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/engineStore-B_7KzytD.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/math.scalar.functions-BMwEppRb.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/math.vector.pure-Bs5Q3Ca3.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/math.color.pure-CnFiUYNm.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/precisionDate-CfCevjl-.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/logger-CuBYPcDK.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/tools.functions-Bfpe10Z_.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/webRequest-dqz0dHXK.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/halfFloat-Ce77JD5z.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/tools.pure-D_g-QWFO.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/decorators-BS-fGYfw.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/baseTexture.pure-Mt9Jc6c6.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/shaderStore-D-XQlhUT.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/internalTexture-CIqq8xFB.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/thinEngine.pure-BhxI343c.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/audioEngineV2-DVCbGoO_.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/spatialWebAudioUpdaterComponent-siREYp66.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/abstractAudioNode-Ct5BhjKQ.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/preload-helper-DzqPTYOv.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/webAudioBaseSubGraph-ahxe98Fe.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/spatialWebAudio-MLr5V4Gz.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/abstractSoundSource-EXxOfp1e.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/abstractSoundInstance-vDtCTfJr.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/packingFunctions-BtK51k3Y.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/bonesDeclaration-3fzk1vv3.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/bakedVertexAnimation-7XIMgH6x.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/morphTargetsVertexGlobalDeclaration-CAOQ2X8h.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/morphTargetsVertexDeclaration-BoNQXQ5g.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/instancesDeclaration-CJBvtBV5.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/morphTargetsVertexGlobal-CKIgoRtW.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/morphTargetsVertex-De98nBP1.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/instancesVertex-C-FoRQR1.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/bonesVertex-C-6EIxbv.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/packingFunctions-zMCp-5EJ.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/bonesDeclaration-C_GZ6k81.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/bakedVertexAnimationDeclaration-C-g0vyVW.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/morphTargetsVertexGlobalDeclaration-LgRwWaoX.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/morphTargetsVertexDeclaration-lzw20E7Y.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/instancesDeclaration-DsiFqYXH.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/morphTargetsVertexGlobal-IS1MZ8yz.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/morphTargetsVertex-x5LmUlz0.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/instancesVertex-Dty6qjVO.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/bonesVertex-BGJW_9OC.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/bakedVertexAnimation-CP3BNGXM.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/cubemapToSphericalPolynomial-Cy7wefba.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/helperFunctions-CPZVryR8.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/fresnelFunction-B3UVg8Q-.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/meshUboDeclaration-BATNZvmb.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/sceneUboDeclaration-D_dVU-T1.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/decalFragment-CvBK6CMD.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/helperFunctions-DXiZRiWF.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/clipPlaneFragmentDeclaration-DwyXN3A8.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/clipPlaneFragment-CiHPIb-X.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/clipPlaneVertexDeclaration-lbEIdyxE.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/clipPlaneVertex-DPSs14UF.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/clipPlaneFragmentDeclaration-ByWuc2u-.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/clipPlaneFragment-CIXWtyW3.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/clipPlaneVertexDeclaration-_B10-M6A.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/clipPlaneVertex-BDcbHYFd.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/sceneVertexDeclaration-CluTp-RC.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/meshVertexDeclaration-CPlGPeEg.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/sceneUboDeclaration-B5VhSG0v.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/meshUboDeclaration-BmNu2KU_.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/clusteredLightingFunctions-BFCOODPn.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/clusteredLightingFunctions-DNqaoQCj.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/backgroundUboDeclaration-CvL1rn_O.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/fogVertexDeclaration-CiHbVcSR.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/lightVxUboDeclaration-CRTevJ7j.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/logDepthDeclaration-FIwYr9tC.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/fogVertex-D0bmc4KF.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/shadowsVertex-BorYl7Jm.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/logDepthVertex-DSD5XdGw.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/reflectionFunction-B71fKnsF.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/imageProcessingDeclaration-DXUaJI_N.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/lightUboDeclaration-CUIASsX5.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/ltcHelperFunctions-D8BySwCQ.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/lightsFragmentFunctions-CQUWMvKD.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/shadowsFragmentFunctions-BEUrtVDp.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/imageProcessingFunctions-Ccn56Hme.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/fogFragmentDeclaration-RaGxQRv_.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/lightFragment-x1Dngszw.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/logDepthFragment-CxtJswLx.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/fogFragment-C9E3EVJj.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/backgroundUboDeclaration-i4MsxPq1.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/fogVertexDeclaration-Bb9kDbrL.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/lightVxFragmentDeclaration-Bl0jzps7.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/lightVxUboDeclaration-C0bL_Fd5.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/logDepthDeclaration-DcRZd9JE.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/fogVertex-B90wzaBe.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/shadowsVertex-PTtZYBbI.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/logDepthVertex-D5IUM6qd.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/reflectionFunction-UnxJdyP6.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/imageProcessingDeclaration-BrX2Kfu8.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/lightFragmentDeclaration-BQSeSN9D.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/lightUboDeclaration-BGQye3zh.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/ltcHelperFunctions-DS3Utz6C.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/lightsFragmentFunctions-CBON2Pju.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/shadowsFragmentFunctions-B2pdv0XY.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/imageProcessingFunctions-D0LsETkF.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/fogFragmentDeclaration-DCUwnHxF.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/lightFragment-BGrbNx2s.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/logDepthFragment-C5lxT4l1.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/fogFragment-CKCGTcJi.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/vertexColorMixing-DPW6Is9y.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/pbrUboDeclaration-aCN_FR-R.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/samplerVertexImplementation-CbPW9xhO.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/mainUVVaryingDeclaration-B_7d0nc3.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/pbrBRDFFunctions-DxfbxN23.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/harmonicsFunctions-Bny7AGgg.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/bumpVertexDeclaration-zEGdjOId.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/vertexPullingDeclaration-bSzsf5ND.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/bumpVertex-KprKHjtT.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/vertexColorMixing-UCrnwszu.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/objectIdFunctions-DbOLxRrm.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/meshBlendTagFragmentOutput-BRH6s5gV.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/oitFragment-BX3jW996.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/pbrDebug-CEvFDHdf.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/samplerFragmentDeclaration-CEHqUfAO.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/pbrIBLFunctions-s_OLNRwF.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/subSurfaceScatteringFunctions-kzIx-1Od.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/hdrFilteringFunctions-DYXzZGFY.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/bumpFragmentMainFunctions-D0d3fcRr.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/bumpFragmentFunctions-BtqTG-Jp.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/bumpFragment-qvwADx5P.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/samplerVertexImplementation-DUwTGCgo.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/pbrUboDeclaration-C6VSFqZI.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/mainUVVaryingDeclaration-BBamQlxR.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/pbrBRDFFunctions-BCNINF-p.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/harmonicsFunctions-BVq19rUD.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/bumpVertexDeclaration-CP4xz8pV.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/bumpVertex-matgJiZ9.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/objectIdFunctions-yylhAVFR.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/prePassDeclaration-COP2lVSj.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/oitFragment-DbgsmPZH.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/pbrDebug-BqaGz1G1.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/samplerFragmentDeclaration-3yaLawFX.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/pbrIBLFunctions-CZOjFl72.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/subSurfaceScatteringFunctions-D1w5631e.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/hdrFilteringFunctions-pzE3ktpd.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/bumpFragmentMainFunctions-DkgncWl2.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/bumpFragmentFunctions-CCuM6cKQ.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/decalFragment-DYiNNNYb.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/bumpFragment-DBk_MN3g.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/openpbrUboDeclaration-Cg4zTwyX.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/openpbrSubsurfaceLayerData-DpsV2wgM.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/openpbrUboDeclaration-CbPGRvOI.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/sceneFragmentDeclaration-ql3RpL9u.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/openpbrSubsurfaceLayerData-DZgp0Qa4.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/gaussianSplattingShared-ByBJQ-9z.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/defaultUboDeclaration-C53xcSdv.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/pointCloudVertex-CmkEsLzf.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/defaultUboDeclaration-Dm3rcdMO.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/gaussianPointSplatting-UwjdZPb8.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/gaussianPointSplattingScan-COj6jNKT.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/geometryRenderingFragment-DZg0Y277.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/geometryRenderingFragment-po9sGJ7r.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/screenSpaceRayTrace-BZRnp6Bu.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/screenSpaceRayTrace-Z74_Mvl0.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/kernelBlurVaryingDeclaration-DP2Wr9Oc.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/kernelBlurVaryingDeclaration-g2Ge9lzd.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/mrtFragmentDeclaration-BZpfWb0R.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/boundingBoxRendererUboDeclaration-p4IHL4lf.js">
+  <link rel="modulepreload" crossorigin href="/java-drift/assets/iblVoxelOpacityAtomicMax-C9BLvW0W.js">
+  <link rel="stylesheet" crossorigin href="/java-drift/assets/index-yeaqhF58.css">
+</head>
+
+<body>
+    <div id="hud">
+        <div class="title">JAVA DRIFT</div>
+        <div id="speed">Kecepatan: 0 km/h</div>
+        <div id="score">Total Skor: 0</div>
+        <div id="drift-status"></div>
+        <div class="controls">Kontrol PC: <b>W/A/S/D</b> atau <b>Panah</b> | <b>Spasi</b> untuk Drift</div>
+    </div>
+
+    <!-- Kontrol Sentuh Layar (Mobile / Tablet) -->
+    <div id="touch-controls">
+        <div class="touch-left">
+            <button id="btn-left" class="touch-btn">◀</button>
+            <button id="btn-right" class="touch-btn">▶</button>
+        </div>
+        <div class="touch-right">
+            <button id="btn-drift" class="touch-btn drift-btn">DRIFT</button>
+            <button id="btn-brake" class="touch-btn brake-btn">REM</button>
+            <button id="btn-gas" class="touch-btn gas-btn">GAS</button>
+        </div>
+    </div>
+
+    <canvas id="renderCanvas"></canvas>
+</body>
+
+</html>
