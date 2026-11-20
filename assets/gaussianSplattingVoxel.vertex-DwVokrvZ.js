@@ -1,4 +1,4 @@
-import{t as e}from"./shaderStore-D-XQlhUT.js";import{a as t,i as n,t as r}from"./index-D0tOPhQZ.js";import{t as i}from"./sceneUboDeclaration-B5VhSG0v.js";import{t as a}from"./meshUboDeclaration-BmNu2KU_.js";var o=`gaussianSplattingVoxelVertexShader`,s=`#include<__decl__gaussianSplattingVertex>
+import{t as e}from"./shaderStore-D-XQlhUT.js";import{a as t,i as n,t as r}from"./index-DYhVy3zl.js";import{t as i}from"./sceneUboDeclaration-B5VhSG0v.js";import{t as a}from"./meshUboDeclaration-BmNu2KU_.js";var o=`gaussianSplattingVoxelVertexShader`,s=`#include<__decl__gaussianSplattingVertex>
 uniform vec2 dataTextureSize;uniform float alpha;uniform mat4 invWorldScale;uniform mat4 viewMatrix;uniform sampler2D rotationsATexture;uniform sampler2D rotationsBTexture;uniform sampler2D rotationScaleTexture;uniform sampler2D centersTexture;uniform sampler2D colorsTexture;
 #if IS_COMPOUND
 uniform mat4 partWorld[MAX_PART_COUNT];uniform float partVisibility[MAX_PART_COUNT];uniform sampler2D partIndicesTexture;
